@@ -1,10 +1,24 @@
 import React, { ReactElement, FC } from "react"
 
-export const GridBase:FC = ():ReactElement => {
+type Grid = {
+    rows: number,
+    column: number,
+    style: {},
+}
+
+export const GridBase = (
+    {
+        rows,
+        column,
+        style,
+    }: Grid
+):ReactElement => {
     const test = "";
     
     return (
-        <div>
+        <div
+            className="flex flex-wrap"
+        >
             <h1></h1>
         </div>
     )
