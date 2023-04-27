@@ -1,4 +1,4 @@
-import { createBlankGrid } from "@/pages/scripts/grid";
+// import { createBlankGrid } from "@/pages/scripts/grid";
 import React, { ReactElement, FC } from "react"
 
 type Grid = {
@@ -18,13 +18,18 @@ export const GridBase = (
 ):ReactElement => {
     const test = "";
 
-    const grid: any[] = createBlankGrid(gameData)
+    // const {grid, table}: any = createBlankGrid(gameData)
+
     
     return (
         <div
             className="flex "
         >
             <h1>{gameData.name}</h1>
+
+            <table>
+
+            </table>
 
             <div></div>
         </div>
